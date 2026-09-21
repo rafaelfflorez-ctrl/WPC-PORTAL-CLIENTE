@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+@theme {
+  --color-wpc-purple: #5916EC;
+  --color-wpc-purple-hover: #6E2EF2;
+  --color-wpc-purple-light: #7E43F5;
+  --color-wpc-purple-dark: #430BBF;
+  --color-wpc-gray: #888888;
+  --color-wpc-slate: #35383F;
+}
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color-scheme: dark;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  html.light {
+    color-scheme: light;
+  }
+}
+
+/* ==========================================================================
+   Light Mode Global Overrides for World Parts Company S.A.S.
+   Provides a crisp, high-contrast, premium corporate executive aesthetic
+   ========================================================================== */
+
+html.light {
+  /* Surfaces & Containers */
+  .bg-slate-950 {
+    background-color: #ffffff !important;
+  }
+
+  .bg-slate-900\/70,
+  .bg-slate-900\/60,
+  .bg-slate-900\/50,
+  .bg-slate-900\/40,
+  .bg-slate-900 {
+    background-color: #f8fafc !important;
+  }
+
+  .bg-slate-900\/90 {
+    background-color: #ffffff !important;
+  }
+
+  .bg-slate-950\/70,
+  .bg-slate-950\/80,
+  .bg-slate-950\/90,
+  .bg-slate-950\/95,
+  .bg-slate-950\/98 {
+    background-color: #f1f5f9 !important;
+  }
+
+  /* Borders & Dividers */
+  .border-slate-800,
+  .border-slate-800\/80,
+  .border-slate-800\/90,
+  .border-slate-900 {
+    border-color: #e2e8f0 !important;
+  }
+
+  .border-slate-700,
+  .border-slate-700\/60 {
+    border-color: #cbd5e1 !important;
+  }
+
+  /* Headings & High-contrast Text */
+  .text-white {
+    color: #0f172a !important;
+  }
+
+  /* Body & Subtitles */
+  .text-slate-100 {
+    color: #1e293b !important;
+  }
+
+  .text-slate-200 {
+    color: #334155 !important;
+  }
+
+  .text-slate-300 {
+    color: #475569 !important;
+  }
+
+  .text-slate-400 {
+    color: #64748b !important;
+  }
+
+  /* Brand Colors Refinement for High-Contrast Light Mode */
+  .text-purple-300,
+  .text-purple-400 {
+    color: #5916EC !important;
+  }
+
+  .bg-\[\#5916EC\]\/10,
+  .bg-\[\#5916EC\]\/15,
+  .bg-\[\#5916EC\]\/20 {
+    background-color: rgba(89, 22, 236, 0.08) !important;
+  }
+
+  .border-\[\#5916EC\]\/30,
+  .border-\[\#5916EC\]\/25,
+  .border-\[\#5916EC\]\/40 {
+    border-color: rgba(89, 22, 236, 0.25) !important;
+  }
+
+  /* Form Inputs & Controls */
+  input, select, textarea {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    border-color: #cbd5e1 !important;
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: #94a3b8 !important;
+  }
+
+  /* Buttons that explicitly need white text */
+  .bg-\[\#5916EC\],
+  .bg-\[\#5916EC\]:hover,
+  .bg-\[\#6E2EF2\],
+  button.bg-\[\#5916EC\] * {
+    color: #ffffff !important;
+  }
+
+  /* Modals & Dialog overlays */
+  .bg-slate-950\/80.backdrop-blur-md,
+  .bg-black\/80,
+  .bg-black\/75 {
+    background-color: rgba(15, 23, 42, 0.6) !important;
+  }
+
+  /* Cards inner styling */
+  .shadow-2xl,
+  .shadow-xl {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.06), 0 8px 10px -6px rgba(0, 0, 0, 0.04) !important;
+  }
+}

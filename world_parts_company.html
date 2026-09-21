@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Parts Company S.A.S. | Broker de Comercio Internacional</title>
+  <meta name="description" content="Broker de comercio internacional con financiamiento estratégico, factoring en alianza con Finamco y abastecimiento verificado en terreno en China y Panamá." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              200: '#a7f3d0',
+              300: '#6ee7b7',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+              950: '#022c22',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-slate-950">
+
+  <!-- Top Info Bar -->
+  <div class="hidden border-b border-slate-900 bg-slate-900/80 px-4 py-2 text-xs text-slate-400 sm:block">
+    <div class="mx-auto flex max-w-7xl items-center justify-between">
+      <div class="flex items-center space-x-6">
+        <span class="flex items-center gap-1.5 text-slate-300">
+          <svg class="h-3.5 w-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+          Sede Principal: Cartagena de Indias, Colombia
+        </span>
+        <span class="flex items-center gap-1.5 text-slate-300">
+          <svg class="h-3.5 w-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          logisticawpc@gmail.com
+        </span>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center rounded-full bg-emerald-500/10 px-2.5 py-0.5 font-medium text-emerald-400 border border-emerald-500/20">
+          Verificación directa en terreno en China y Panamá
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="sticky top-0 z-50 w-full border-b border-slate-800/80 bg-slate-950/90 backdrop-blur-md">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+      <a href="#inicio" class="flex items-center gap-3">
+        <div class="relative flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500 text-slate-950 font-black shadow-md shadow-emerald-950/50">
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-width="2"></circle><line x1="2" y1="12" x2="22" y2="12" stroke-width="2"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke-width="2"></path></svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-base font-extrabold tracking-tight text-white sm:text-lg">
+            World Parts Company S.A.S.
+          </span>
+          <span class="text-[11px] font-semibold uppercase tracking-widest text-emerald-400">
+            Broker de Comercio Internacional
+          </span>
+        </div>
+      </a>
+
+      <!-- Navigation links (Strictly no Finamco mention in header) -->
+      <nav class="hidden items-center gap-8 md:flex">
+        <a href="#inicio" class="text-sm font-medium text-slate-300 hover:text-emerald-400 transition">Inicio</a>
+        <a href="#servicios" class="text-sm font-medium text-slate-300 hover:text-emerald-400 transition">Servicios</a>
+        <a href="#abastecimiento-global" class="text-sm font-medium text-slate-300 hover:text-emerald-400 transition">Abastecimiento Global</a>
+        <a href="#alianza-financiera" class="text-sm font-medium text-slate-300 hover:text-emerald-400 transition">Alianza Financiera</a>
+      </nav>
+
+      <div class="hidden items-center gap-4 md:flex">
+        <a href="#cotizar" class="inline-flex items-center justify-center rounded-lg bg-emerald-500 px-5 py-2.5 text-sm font-bold text-slate-950 shadow-md transition hover:bg-emerald-400">
+          Cotizar Operación
+        </a>
+      </div>
+
+      <!-- Mobile Button -->
+      <button id="mobileMenuBtn" class="flex md:hidden p-2 text-slate-400 hover:text-white" aria-label="Abrir menú">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileMenu" class="hidden border-b border-slate-800 bg-slate-950 px-4 py-4 md:hidden">
+      <div class="space-y-2">
+        <a href="#inicio" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-300 hover:bg-slate-900 hover:text-emerald-400">Inicio</a>
+        <a href="#servicios" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-300 hover:bg-slate-900 hover:text-emerald-400">Servicios</a>
+        <a href="#abastecimiento-global" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-300 hover:bg-slate-900 hover:text-emerald-400">Abastecimiento Global</a>
+        <a href="#alianza-financiera" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-300 hover:bg-slate-900 hover:text-emerald-400">Alianza Financiera</a>
+        <a href="#cotizar" class="mt-2 block w-full rounded-lg bg-emerald-500 px-4 py-2.5 text-center text-sm font-bold text-slate-950 hover:bg-emerald-400">Cotizar Operación</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="relative overflow-hidden bg-slate-950 pt-14 pb-20 sm:pt-20 sm:pb-28">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid items-center gap-12 lg:grid-cols-12">
+        <div class="lg:col-span-7">
+          <div class="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-950/40 px-3.5 py-1.5 text-xs font-semibold text-emerald-300">
+            Sede Principal: Cartagena de Indias, Colombia
+          </div>
+
+          <h1 class="mt-6 text-3xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-5xl lg:leading-[1.15]">
+            Broker de Comercio Internacional y Financiamiento Estratégico para Optimizar tu Capital de Trabajo
+          </h1>
+
+          <p class="mt-6 text-base leading-relaxed text-slate-300 sm:text-lg">
+            En World Parts Company S.A.S. conectamos a empresas de Colombia con cadenas de suministro seguras y verificadas en China y Panamá, integrando financiamiento por factoring para impulsar tus operaciones sin descapitalizar tu negocio.
+          </p>
+
+          <div class="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
+            <div class="rounded-lg border border-slate-800 bg-slate-900/60 p-3 text-xs text-slate-300">
+              <strong class="text-white block font-semibold">Inspección en Terreno:</strong>
+              Equipo propio validando calidad de fábricas y cargas directamente en China y Panamá.
+            </div>
+            <div class="rounded-lg border border-slate-800 bg-slate-900/60 p-3 text-xs text-slate-300">
+              <strong class="text-white block font-semibold">Factoring Estratégico:</strong>
+              Alianza con Finamco para anticipar facturas y robustecer el flujo de caja.
+            </div>
+          </div>
+
+          <div class="mt-10 flex flex-wrap items-center gap-4">
+            <a href="#cotizar" class="inline-flex items-center justify-center rounded-lg bg-emerald-500 px-6 py-3.5 text-sm font-bold text-slate-950 shadow-lg shadow-emerald-500/20 transition hover:bg-emerald-400">
+              Solicitar Cotización de Importación
+            </a>
+            <a href="#alianza-financiera" class="inline-flex items-center justify-center rounded-lg border border-slate-700 bg-slate-900/80 px-5 py-3.5 text-sm font-semibold text-slate-200 transition hover:border-emerald-500 hover:text-white">
+              Conocer Alianza Financiera
+            </a>
+          </div>
+        </div>
+
+        <!-- Visual Flow Card -->
+        <div class="lg:col-span-5">
+          <div class="rounded-2xl border border-slate-800 bg-slate-900/90 p-6 shadow-2xl backdrop-blur-xl">
+            <div class="border-b border-slate-800 pb-4">
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Ecosistema B2B Verificado</span>
+              <h2 class="text-base font-bold text-white mt-1">World Parts Company S.A.S.</h2>
+            </div>
+            <div class="mt-5 space-y-4 text-xs">
+              <div class="rounded-xl border border-slate-800 bg-slate-950 p-4">
+                <span class="font-bold text-emerald-400">01. Origen Estratégico: China y Panamá</span>
+                <p class="mt-1 text-slate-300">Verificación presencial de proveedores y auditorías técnicas antes de embarcar.</p>
+              </div>
+              <div class="rounded-xl border border-slate-800 bg-slate-950 p-4">
+                <span class="font-bold text-emerald-400">02. Pilares de Importación</span>
+                <p class="mt-1 text-slate-300">Abastecimiento continuo de mercancía y tecnología industrial de alta gama.</p>
+              </div>
+              <div class="rounded-xl border border-emerald-500/30 bg-emerald-950/20 p-4">
+                <span class="font-bold text-emerald-300">03. Factoring en Alianza con Finamco</span>
+                <p class="mt-1 text-slate-200">Convierte facturas en liquidez inmediata y preserva tu capital de trabajo.</p>
+              </div>
+              <div class="rounded-xl border border-slate-800 bg-slate-950 p-3 text-center text-slate-400">
+                Sede Operativa y Despacho Aduanero: <strong class="text-white">Cartagena de Indias, Colombia</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Servicios y Financiamiento -->
+  <section id="servicios" class="bg-slate-900/60 py-20 lg:py-28 border-y border-slate-800">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Servicios B2B</span>
+        <h2 class="mt-2 text-3xl font-extrabold text-white sm:text-4xl">
+          Nuestros Dos Pilares de Importación
+        </h2>
+        <p class="mt-3 text-base text-slate-300">
+          Estructuramos cada operación para resolver tanto las necesidades de inventario comercial como la modernización tecnológica de tu empresa en Colombia.
+        </p>
+      </div>
+
+      <div class="mt-12 grid gap-8 lg:grid-cols-2">
+        <!-- Pilar 1 -->
+        <div class="rounded-2xl border border-slate-800 bg-slate-950 p-8">
+          <span class="text-xs font-bold uppercase tracking-widest text-emerald-400">Pilar Fundamental 01</span>
+          <h3 class="mt-4 text-2xl font-bold text-white">
+            Importación de Mercancía para el Abastecimiento de tu Negocio
+          </h3>
+          <p class="mt-3 text-sm text-slate-300 leading-relaxed">
+            Aseguramos el flujo constante de suministros, inventarios comerciales, materias primas y repuestos de alta rotación para mantener tu operación productiva y competitiva en el mercado colombiano.
+          </p>
+          <ul class="mt-6 space-y-3 text-xs text-slate-300 border-t border-slate-800/80 pt-6">
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">Inventarios y Stock Continuo:</strong> Negociación directa en origen para obtener economías de escala y mejores márgenes.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">Consolidación Multimodal:</strong> Contenedores completos (FCL) o consolidados (LCL) eficientes en costo y tiempo.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">Agenciamiento Integral:</strong> Despacho y nacionalización fluida en el puerto de Cartagena de Indias.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Pilar 2 -->
+        <div class="rounded-2xl border border-slate-800 bg-slate-950 p-8">
+          <span class="text-xs font-bold uppercase tracking-widest text-emerald-400">Pilar Fundamental 02</span>
+          <h3 class="mt-4 text-2xl font-bold text-white">
+            Importación de Mejora Tecnológica
+          </h3>
+          <p class="mt-3 text-sm text-slate-300 leading-relaxed">
+            Impulsamos la capacidad y modernización técnica de tu industria con maquinaria pesada, líneas de producción automatizadas, componentes de alta gama e infraestructura productiva de última generación.
+          </p>
+          <ul class="mt-6 space-y-3 text-xs text-slate-300 border-t border-slate-800/80 pt-6">
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">Maquinaria Especializada:</strong> Centros de mecanizado, líneas de envasado, prensas y tecnología de manufactura.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">Componentes de Alta Gama:</strong> Dispositivos mecatrónicos, sensores industriales y repuestos críticos de precisión.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">Auditoría Técnica en Origen:</strong> Verificación in situ de normas de seguridad, certificaciones y pruebas operativas.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Alianza Financiera con Finamco -->
+      <div id="alianza-financiera" class="mt-16 rounded-3xl border border-emerald-500/40 bg-slate-950 p-8 sm:p-12 shadow-2xl">
+        <div class="max-w-3xl">
+          <span class="inline-flex items-center rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-bold text-emerald-300 border border-emerald-500/20">
+            Alianza Financiera Estratégica
+          </span>
+          <h3 class="mt-4 text-2xl font-extrabold text-white sm:text-3xl">
+            Servicio de Financiamiento a Través de Factoring en Alianza con Finamco
+          </h3>
+          <p class="mt-4 text-base leading-relaxed text-slate-300">
+            En World Parts Company S.A.S. contamos con una alianza estratégica con <strong class="text-emerald-400 font-semibold">Finamco</strong> para brindar financiamiento a través de factoring. Esta solución permite convertir tus facturas por cobrar en liquidez inmediata, optimizando de manera sustancial tu flujo de caja y robusteciendo el capital de trabajo sin descapitalizar la empresa.
+          </p>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="rounded-xl border border-slate-800 bg-slate-900/60 p-4">
+            <span class="text-xs font-bold text-emerald-400">Liquidez Inmediata</span>
+            <p class="mt-1 text-xs text-slate-300">Convierte facturas a crédito de 30, 60 o 90 días en recursos disponibles en menos de 48 horas.</p>
+          </div>
+          <div class="rounded-xl border border-slate-800 bg-slate-900/60 p-4">
+            <span class="text-xs font-bold text-emerald-400">Cero Descapitalización</span>
+            <p class="mt-1 text-xs text-slate-300">Financia tus compras internacionales en China y Panamá conservando tus fondos de reserva propios.</p>
+          </div>
+          <div class="rounded-xl border border-slate-800 bg-slate-900/60 p-4">
+            <span class="text-xs font-bold text-emerald-400">Líneas Bancarias Libres</span>
+            <p class="mt-1 text-xs text-slate-300">No afecta tus límites de crédito bancario tradicional ni satura tus pasivos financieros.</p>
+          </div>
+          <div class="rounded-xl border border-slate-800 bg-slate-900/60 p-4">
+            <span class="text-xs font-bold text-emerald-400">Poder de Negociación</span>
+            <p class="mt-1 text-xs text-slate-300">Paga con rapidez a fabricantes en el extranjero accediendo a mayores descuentos por pronto pago.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Abastecimiento Estratégico Global -->
+  <section id="abastecimiento-global" class="bg-slate-950 py-20 lg:py-28">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto">
+        <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Sourcing Internacional</span>
+        <h2 class="mt-2 text-3xl font-extrabold text-white sm:text-4xl">
+          Abastecimiento Estratégico Global: China y Panamá
+        </h2>
+        <p class="mt-4 text-base text-slate-300">
+          Nuestros mercados de abastecimiento estratégico global son estrictamente <strong class="text-white">China</strong> y <strong class="text-white">Panamá</strong>. Contamos con un <strong class="text-emerald-400 font-semibold">equipo propio en terreno</strong> que se encarga de verificar proveedores y mercancías directamente en China y Panamá para garantizar seguridad y control de calidad.
+        </p>
+      </div>
+
+      <div class="mt-12 grid gap-8 lg:grid-cols-2">
+        <!-- China -->
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-8">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xl font-bold text-white">China: Manufactura y Alta Tecnología</h3>
+            <span class="rounded-full bg-slate-800 px-3 py-1 text-xs font-semibold text-emerald-400">Equipo en Terreno</span>
+          </div>
+          <p class="mt-4 text-sm text-slate-300 leading-relaxed">
+            Nuestro equipo propio radicado en territorio chino visita presencialmente las plantas fabriles en los principales polos industriales para realizar:
+          </p>
+          <ul class="mt-4 space-y-2.5 text-xs text-slate-300">
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">Auditoría Presencial de Fábrica:</strong> Verificación de registro legal, solvencia y capacidad técnica real.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">Control de Calidad Previo al Embarque:</strong> Medición milimétrica, revisión de acabados y pruebas de funcionamiento de maquinaria.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">Inspección de Llenado de Contenedor:</strong> Supervisión de estiba, sujeción y precintado de seguridad para evitar mermas o daños en tránsito.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Panamá -->
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-8">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xl font-bold text-white">Panamá: Hub Multimodal de las Américas</h3>
+            <span class="rounded-full bg-slate-800 px-3 py-1 text-xs font-semibold text-emerald-400">Equipo en Terreno</span>
+          </div>
+          <p class="mt-4 text-sm text-slate-300 leading-relaxed">
+            Operamos directamente en la Zona Libre de Colón y las zonas logísticas del Canal de Panamá con personal propio dedicado a:
+          </p>
+          <ul class="mt-4 space-y-2.5 text-xs text-slate-300">
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">Verificación en Almacenes Fiscales:</strong> Inspección directa de mercancía almacenada antes de la compra y despacho.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">Consolidación Multimodal Rápida:</strong> Unificación de órdenes de diversos distribuidores bajo expedientes documentales impecables.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 font-bold">•</span>
+              <span><strong class="text-white">Tránsito Ultracorto al Caribe:</strong> Conexión directa y ágil hacia Cartagena de Indias para reaprovisionamiento inmediato de stock.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Contact & Quote Form -->
+  <section id="cotizar" class="border-t border-slate-800 bg-slate-950 py-20 lg:py-28">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-12 lg:grid-cols-12">
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Contacto Directo</span>
+          <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+            World Parts Company S.A.S.
+          </h2>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Nuestro equipo de comercio exterior y asesores financieros están listos para estructurar tu operación desde Cartagena de Indias hacia cualquier ciudad de Colombia.
+          </p>
+
+          <div class="space-y-4 pt-2 text-xs">
+            <div class="rounded-xl border border-slate-800 bg-slate-900/60 p-4">
+              <strong class="text-white block font-bold">Oficina Principal:</strong>
+              <span class="text-slate-300">Cartagena de Indias, Colombia</span>
+            </div>
+            <div class="rounded-xl border border-slate-800 bg-slate-900/60 p-4">
+              <strong class="text-white block font-bold">Correo Electrónico de Contacto:</strong>
+              <a href="mailto:logisticawpc@gmail.com" class="text-emerald-400 font-medium hover:underline">
+                logisticawpc@gmail.com
+              </a>
+            </div>
+            <div class="rounded-xl border border-slate-800 bg-slate-900/60 p-4">
+              <strong class="text-white block font-bold">Abastecimiento Verificado:</strong>
+              <span class="text-slate-300">China y Panamá con equipo propio en terreno</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="rounded-2xl border border-slate-800 bg-slate-900/90 p-6 sm:p-8 shadow-2xl">
+            <h3 class="text-lg font-bold text-white">Solicitud de Cotización y Asesoría B2B</h3>
+            <p class="text-xs text-slate-400 mt-1">Completa el formulario y te responderemos en menos de 24 horas.</p>
+
+            <form action="mailto:logisticawpc@gmail.com" method="POST" enctype="text/plain" class="mt-6 space-y-4 text-xs">
+              <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div>
+                  <label class="block font-semibold text-slate-300">Empresa o Razón Social</label>
+                  <input type="text" name="Empresa" required placeholder="Nombre de tu empresa" class="mt-1 w-full rounded-lg border border-slate-800 bg-slate-950 px-3.5 py-2.5 text-white placeholder-slate-500 focus:border-emerald-500 focus:outline-none" />
+                </div>
+                <div>
+                  <label class="block font-semibold text-slate-300">Nombre del Contacto</label>
+                  <input type="text" name="Contacto" required placeholder="Persona responsable" class="mt-1 w-full rounded-lg border border-slate-800 bg-slate-950 px-3.5 py-2.5 text-white placeholder-slate-500 focus:border-emerald-500 focus:outline-none" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div>
+                  <label class="block font-semibold text-slate-300">Correo Electrónico</label>
+                  <input type="email" name="Email" required placeholder="contacto@tuempresa.com" class="mt-1 w-full rounded-lg border border-slate-800 bg-slate-950 px-3.5 py-2.5 text-white placeholder-slate-500 focus:border-emerald-500 focus:outline-none" />
+                </div>
+                <div>
+                  <label class="block font-semibold text-slate-300">Teléfono / Celular</label>
+                  <input type="tel" name="Telefono" required placeholder="+57 300 000 0000" class="mt-1 w-full rounded-lg border border-slate-800 bg-slate-950 px-3.5 py-2.5 text-white placeholder-slate-500 focus:border-emerald-500 focus:outline-none" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div>
+                  <label class="block font-semibold text-slate-300">Servicio Requerido</label>
+                  <select name="Servicio" class="mt-1 w-full rounded-lg border border-slate-800 bg-slate-950 px-3.5 py-2.5 text-white focus:border-emerald-500 focus:outline-none">
+                    <option value="Abastecimiento">Importación para Abastecimiento de Negocio</option>
+                    <option value="Mejora Tecnologica">Importación de Mejora Tecnológica (Maquinaria)</option>
+                    <option value="Factoring Finamco">Financiamiento / Factoring en Alianza con Finamco</option>
+                    <option value="Operacion Integral">Operación Integral (Importación + Factoring)</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block font-semibold text-slate-300">Mercado de Origen</label>
+                  <select name="Origen" class="mt-1 w-full rounded-lg border border-slate-800 bg-slate-950 px-3.5 py-2.5 text-white focus:border-emerald-500 focus:outline-none">
+                    <option value="China">China (Manufactura y Maquinaria)</option>
+                    <option value="Panama">Panamá (Hub Logístico y Tránsito Rápido)</option>
+                    <option value="Ambos">Ambos Mercados (China y Panamá)</option>
+                    <option value="Factoring">Sólo Financiamiento Factoring</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block font-semibold text-slate-300">Detalles de la Carga, Maquinaria o Facturas</label>
+                <textarea name="Detalles" rows="3" placeholder="Describe los requerimientos específicos o especificaciones técnicas..." class="mt-1 w-full rounded-lg border border-slate-800 bg-slate-950 px-3.5 py-2.5 text-white placeholder-slate-500 focus:border-emerald-500 focus:outline-none"></textarea>
+              </div>
+
+              <button type="submit" class="w-full rounded-lg bg-emerald-500 py-3 text-sm font-bold text-slate-950 shadow-md transition hover:bg-emerald-400">
+                Enviar Solicitud a logisticawpc@gmail.com
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 bg-slate-950 text-slate-400 text-xs">
+    <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div>
+          <span class="text-base font-extrabold text-white block">World Parts Company S.A.S.</span>
+          <span class="text-[11px] font-semibold text-emerald-400 uppercase tracking-wider block mt-0.5">Broker de Comercio Internacional</span>
+          <p class="mt-3 text-slate-300 leading-relaxed">
+            Brokerage de comercio exterior con financiamiento estratégico por factoring en alianza con Finamco y abastecimiento verificado con equipo propio en terreno en China y Panamá.
+          </p>
+        </div>
+
+        <div>
+          <span class="font-bold text-white uppercase tracking-wider block">Sede Principal</span>
+          <p class="mt-2 text-slate-300">Cartagena de Indias, Colombia</p>
+          <p class="mt-1 text-slate-400">Epicentro portuario y aduanero del Caribe</p>
+          <p class="mt-3 text-slate-300">
+            Correo de contacto: <a href="mailto:logisticawpc@gmail.com" class="text-emerald-400 hover:underline">logisticawpc@gmail.com</a>
+          </p>
+        </div>
+
+        <div>
+          <span class="font-bold text-white uppercase tracking-wider block">Mercados Estratégicos</span>
+          <p class="mt-2 text-slate-300">China y Panamá</p>
+          <p class="mt-1 text-slate-400">Verificación presencial en fábrica y bodegas fiscales</p>
+          <p class="mt-3 text-emerald-400 font-semibold">Alianza Financiera con Finamco</p>
+        </div>
+      </div>
+
+      <div class="mt-10 border-t border-slate-800/80 pt-6 text-center text-slate-500 text-[11px]">
+        © 2026 World Parts Company S.A.S. Todos los derechos reservados. Cartagena de Indias, Colombia.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobileMenuBtn');
+    const menu = document.getElementById('mobileMenu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    }
+  </script>
+</body>
+</html>

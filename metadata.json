@@ -1,0 +1,6 @@
+{
+  "name": "World Parts Company S.A.S.",
+  "description": "Broker de comercio internacional con financiamiento estratégico, factoring en alianza con Finamco y abastecimiento verificado en terreno en China y Panamá.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

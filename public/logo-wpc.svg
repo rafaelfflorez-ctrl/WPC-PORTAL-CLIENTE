@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" fill="none">
+  <!-- WPC Geometric Emblem -->
+  <!-- Left diamond: Electric Violet #5916EC -->
+  <!-- Top: (198, 134), Right: (250, 218), Bottom: (200, 300), Left: (152, 218) -->
+  <polygon points="198,134 250,218 200,300 152,218" fill="#5916EC" />
+  
+  <!-- Right diamond: Refined Medium Slate Grey #878787 -->
+  <!-- Top: (302, 134), Right: (348, 218), Bottom: (300, 300), Left: (250, 218) -->
+  <polygon points="302,134 348,218 300,300 250,218" fill="#878787" />
+  
+  <!-- Central lower inverted triangle: Dark Slate Navy #373A40 -->
+  <!-- Left: (200, 300), Right: (300, 300), Apex top: (250, 218) -->
+  <polygon points="250,218 300,300 200,300" fill="#373A40" />
+
+  <!-- Subtle WPC watermark behind text -->
+  <text x="250" y="392" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="82" fill="#5916EC" opacity="0.08" letter-spacing="0.1em">WPC</text>
+
+  <!-- Typography: WORLD PARTS COMPANY S.A.S. -->
+  <text x="250" y="358" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="19" font-weight="700" fill="currentColor" letter-spacing="0.32em">WORLD PARTS</text>
+  <text x="250" y="385" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="17" font-weight="600" fill="currentColor" letter-spacing="0.36em">COMPANY S.A.S</text>
+</svg>
